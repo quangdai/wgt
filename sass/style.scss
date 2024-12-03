@@ -1,9 +1,10 @@
 @charset "UTF-8";
-// @import '../sass/_fonts.scss';
+@import '../sass/_fonts.scss';
 @import '../sass/variables';
 
 @import 
 '../sass/reset',
 '../sass/body',
 '../sass/icon',
+'../sass/components/about',
 '../sass/page/home';

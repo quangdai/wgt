@@ -1,8 +1,15 @@
 @charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
 body {
     background: #fff;
-    font-family: sans-serif;
+    font-family: "Lora", serif;
     font-weight: normal;
     font-size: 14px;
     color: #333;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
 }
