@@ -1,3 +1,6 @@
 section {
     margin-bottom: 80px;
+    &:first-child{
+        margin-top: 49px;
+    }
 }
