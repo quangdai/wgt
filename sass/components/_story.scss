@@ -74,11 +74,13 @@
     font-weight: 400;
     margin-bottom: 8px;
     margin-top: 0;
+    line-height: 30px;
   }
 
   &__paragraph {
     margin: 0;
-
+    line-height: 22px;
+    margin-top: 16px;
     +p {
       margin-top: 16px;
     }

@@ -700,8 +700,16 @@ body {
   margin-right: auto;
 }
 
-.font-lato, .story__box {
+.font-lato, .story__box, .about__content {
   font-family: Lato;
+}
+
+.image--animation {
+  transition: ease-in-out 0.3s;
+}
+.image--animation:hover {
+  transform: scale(1.01);
+  transition: ease-in-out 0.3s;
 }
 
 .about {
@@ -748,7 +756,7 @@ body {
 }
 .about__content {
   text-align: center;
-  font-family: "Lato", sans-serif;
+  line-height: 22px;
 }
 
 @media (max-width: 767px) {
@@ -835,9 +843,12 @@ body {
   font-weight: 400;
   margin-bottom: 8px;
   margin-top: 0;
+  line-height: 30px;
 }
 .story__paragraph {
   margin: 0;
+  line-height: 22px;
+  margin-top: 16px;
 }
 .story__paragraph + p {
   margin-top: 16px;
