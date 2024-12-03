@@ -1,0 +1,100 @@
+// set width cho cột cho flex
+@mixin col-w($width) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 $width;
+    flex: 0 0 $width;
+    max-width: $width;
+}
+
+// tạo danh sách khoảng các margin và padding theo class .m, .mr, .ml, .mt, .mb, .p, .pr, .pl, .pt, .pt (vd .m10)
+$spaceamounts: (0, 10, 20, 30, 50);
+$sides: (top, bottom, left, right, all);
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        @if $side == "all" {
+            .m#{$space} {
+                margin: #{$space}px;
+            }
+
+            .p#{$space} {
+                padding: #{$space}px;
+            }
+        } @else {
+            .m#{str-slice($side, 0, 1)}#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+
+            .p#{str-slice($side, 0, 1)}#{$space} {
+                padding-#{$side}: #{$space}px;
+            }
+        }
+    }
+}
+
+// tạo danh sách font site theo class .fs- (vd .fs-12)
+@for $i from 10 through 50 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+
+
+$theme: #ed1b2f;
+$color-secondary: #0856cc;
+
+// $primary:       $blue;
+// $secondary:     $gray-600;
+// $success:       $green;
+// $info:          $cyan;
+// $warning:       $yellow;
+// $danger:        $red;
+// $light:         $gray-100;
+// $dark:          $gray-900;
+
+// $body-bg:                   $white !default;
+// $body-color:                $gray-900 !default;
+// $body-text-align:           null !default;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1366px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1346px,
+);
+
+$grid-gutter-width: 20px !default;
+$grid-row-columns: 6 !default;
+
+// $utilities: (
+//   "padding": (
+//     property: padding,
+//     values: (
+//       0: 0,
+//       25: 25px,
+//       50: 5px,
+//       75: 75px,
+//       100: 100px,
+//     )
+//   )
+// );
+
+.cc {
+    --bs-breadcrumb-divider: ">";
+}
+
+
+:root {
+    --brand-brandb-500: #232C65;
+    --brand-branda-500: #EF4C7F;
+}

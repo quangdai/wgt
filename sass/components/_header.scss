@@ -1,0 +1,103 @@
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    a{
+        text-decoration: none;
+    }
+    .header-wrap{
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 32px 0;
+        @extend .d-flex, .align-items-center;
+        .header-logo{
+            max-width: 150px;
+            margin-right: 50px;
+        }
+        .nav-menu{
+            .menu-header{
+                @extend .d-flex, .list-unstyled;
+                .menu-item{
+                    margin-right: 32px;
+                }
+                a{
+                    color: #7B88A8;
+                    font-size: 18px;
+                    font-weight: 500;
+                    &:hover{
+                        color: var(--brand-brandb-500);
+                    }
+                }
+            }
+        }
+        .header-right{
+            margin-left: auto;
+            .top-right-icon{
+                color: #22313F;
+                margin-right: 24px;
+                &:hover{
+                    color: #232C65;
+                }
+                svg{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .top-right-btn{
+                width: 112px;
+                height: 44px;
+                border-radius: 4px;
+                margin-right: 10px;
+                background-color: #ccc;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            // =====
+            .notication{
+                position: relative;
+                .dot-notice{
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 7px;
+                    top: 0;
+                    right: 2px;
+                    background-color: #EF4C7F;
+                    display: inline-block;
+                }
+            }
+            .top-cart{
+                position: relative;
+                .count-item{
+                    background-color: #EF4C7F;
+                    color: #fff;
+                    width: 17px;
+                    height: 17px;
+                    font-size: 12px;
+                    display: inline-block;
+                    border-radius: 100%;
+                    text-align: center;
+                    position: absolute;
+                    right: -8px;
+                    top: -10px;
+                }
+            }
+            .sing-in{
+                background-color: #fff;
+                color: var(--brand-brandb-500);
+                font-size: 16px;
+                font-weight: 500;
+                border: 1px solid rgba(35, 44, 101, 0.05);
+            }
+            .sing-up{
+                background: var(--brand-brandb-500);
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}
